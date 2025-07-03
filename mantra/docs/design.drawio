@@ -1,0 +1,97 @@
+<mxfile host="65bd71144e">
+    <diagram id="zmuREZI5bt1nHxEucP23" name="Page-1">
+        <mxGraphModel dx="271" dy="47" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Electrumx (Evrmore fork)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="310" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Electrumx (Ravencoin fork)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="310" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Electrumx (Bitcoin fork)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="310" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="bitcoind" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="350" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="ravend" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="350" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="evrmored" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="350" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Blockchain layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="350" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Electrumx layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="310" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Mantra&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="220" width="590" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Electrumx Adapter (for Bitcoin)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="260" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Electrumx Adapter (for Ravencoin)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="260" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Electrumx Adapter (for Evrmore)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="260" width="180" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Desktop Apps" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="170" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Browser Extension" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="170" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Mobile" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="170" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Server layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="245" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="User layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="10" y="170" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="meowd" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="760" y="350" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Electrumx (Meow fork)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="760" y="310" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="&lt;h1&gt;Mantra&lt;/h1&gt;&lt;p&gt;maps user's address with electrum subscriptions&lt;/p&gt;&lt;p&gt;Everything At the HD level - pubkey map it to a bunch of derived h160&lt;/p&gt;&lt;p&gt;- Keep a record of aggregated balances of the HD pubkey&lt;/p&gt;&lt;p&gt;- have ability to produce transactions&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="10" width="650" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;h1&gt;Electrumx&lt;/h1&gt;&lt;p&gt;- get balance&lt;/p&gt;&lt;p&gt;- subscribe to updates&lt;/p&gt;&lt;p&gt;- broadcast&lt;/p&gt;&lt;p&gt;At the H160 (an address representation) level&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="155" y="410" width="285" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Key Pair&lt;br&gt;Wallet&lt;br&gt;Entropy -&amp;gt; Private Key -&amp;gt; public key -&amp;gt; address (H160) (Scripthash)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="400" width="425" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;" edge="1" parent="1" source="32" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;" edge="1" parent="1" source="32" target="34">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=none;html=1;" edge="1" parent="1" source="32" target="37">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="HD Wallet&lt;br&gt;Entropy -&amp;gt; Private Key -&amp;gt; public key -&amp;gt; EMPTY address (H160) (Scripthash)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="470" width="425" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="Key Pairs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="425" y="570" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="Key Pairs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="730" y="570" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Key Pairs" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="570" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

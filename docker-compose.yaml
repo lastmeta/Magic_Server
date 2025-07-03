@@ -1,0 +1,73 @@
+version: "3.8"
+
+services:
+  master_service:
+    build:
+      context: ./mantra/master_service
+      dockerfile: Dockerfile
+    environment:
+      PORT: 3435
+      DB_HOST: 173.249.10.82
+      DB_PORT: 5433
+      DB_USER: postgres
+      DB_PASSWORD: DHARMA1test
+      DATABASE: magic_dev
+      REDIS_HOST: 173.249.10.82
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: va1EmxsNF0iQtL8hy+LOcqn2/iSaa34JqJauKcUU/foKeAdaahzxJQ1qG3W+QZDAlUZqNWs7+03Fk/eQ192
+    # env_file:
+    #   - ./mantra/master_service/.env
+    ports:
+      - "3435:3435"
+    restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://master_service:3435/health"]
+      interval: 10s
+      retries: 5
+      start_period: 10s
+
+  evr:
+    build:
+      context: ./mantra/services/evr
+      dockerfile: Dockerfile
+    environment:
+      PORT: 3436
+      DB_HOST: 173.249.10.82
+      DB_PORT: 5433
+      DB_USER: postgres
+      DB_PASSWORD: DHARMA1test
+      DATABASE: magic_dev_evr
+      REDIS_HOST: 173.249.10.82
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: va1EmxsNF0iQtL8hy+LOcqn2/iSaa34JqJauKcUU/foKeAdaahzxJQ1qG3W+QZDAlUZqNWs7+03Fk/eQ192
+      SERVICE_ID: EVR
+      SERVICE_NAME: EVRService
+    depends_on:
+      master_service:
+        condition: service_healthy
+    ports:
+      - "3436:3436"
+    restart: "no"
+
+  rvn:
+    build:
+      context: ./mantra/services/rvn
+      dockerfile: Dockerfile
+    environment:
+      PORT: 3437
+      DB_HOST: 173.249.10.82
+      DB_PORT: 5433
+      DB_USER: postgres
+      DB_PASSWORD: DHARMA1test
+      DATABASE: magic_dev_rvn
+      REDIS_HOST: 173.249.10.82
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: va1EmxsNF0iQtL8hy+LOcqn2/iSaa34JqJauKcUU/foKeAdaahzxJQ1qG3W+QZDAlUZqNWs7+03Fk/eQ192
+      SERVICE_ID: RVN
+      SERVICE_NAME: RVNService
+    depends_on:
+      master_service:
+        condition: service_healthy
+    ports:
+      - "3437:3437"
+    restart: "no"

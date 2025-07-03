@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist/client",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "lib": ["es6", "dom"],
+    "types": ["node"],
+    "allowJs": true,
+    "moduleResolution": "node"
+  },
+  "include": ["./signTransaction.ts", "./decodeTxHex.ts"],
+  "exclude": ["node_modules"]
+}
